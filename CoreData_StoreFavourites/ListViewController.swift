@@ -94,7 +94,7 @@ extension ListViewController:UITableViewDelegate,UITableViewDataSource{
         for i in 1...10 {
             let str = (drink["strIngredient\(i)"] as? String) ?? ""
             if i != 1 && str != ""{
-                usedstr.append(",\(str)")
+                usedstr.append(", \(str)")
             }else{
                 usedstr.append(str)
             }
